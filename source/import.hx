@@ -21,6 +21,7 @@ import sys.io.*;
 import js.html.*;
 #end
 
+import schmovin.*;
 import backend.Paths;
 import backend.Controls;
 import backend.CoolUtil;
