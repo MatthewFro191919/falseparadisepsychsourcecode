@@ -122,6 +122,17 @@ class StageWeek1 extends BaseStage
 				stageCurtains.visible = false;
 						}
 				}
+				if(val > 3) //remove all
+						{
+			                                stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
+		                                	add(stageshader2);
+				stageFront.visible = false;
+				stageLight.visible = false;
+				stageshader1.visible = false;
+				stageshader2.visible = false;
+				stageCurtains.visible = false;
+						}
+				}
 		}
 	}
 }
