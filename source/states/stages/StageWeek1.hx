@@ -97,6 +97,9 @@ class StageWeek1 extends BaseStage
 			case "StageStuff":
 				if(flValue1 == null) flValue1 = 0;
 				var val:Int = Math.round(flValue1);
+				var stageFront:BGSprite;
+				var stageLight:BGSprite;
+				var stageCurtains:BGSprite;
 
 				switch(val)
 				{
