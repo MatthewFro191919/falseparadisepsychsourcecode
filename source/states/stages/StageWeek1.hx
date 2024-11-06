@@ -135,7 +135,6 @@ class StageWeek1 extends BaseStage
 				stageshader2.visible = false;
 				stageCurtains.visible = false;
 						}
-				}
 		}
 	}
 }
