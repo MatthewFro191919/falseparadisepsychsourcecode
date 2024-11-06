@@ -5,6 +5,8 @@ import objects.Character;
 
 class StageWeek1 extends BaseStage
 {
+	var stageshader1:FlxTypedGroup<CloudFlightBackground>;
+	var stageshader2:FlxTypedGroup<FalseParadiseBackgroundSprite>;
 	var dadbattleBlack:BGSprite;
 	var dadbattleLight:BGSprite;
 	var dadbattleFog:DadBattleFog;
@@ -86,6 +88,31 @@ class StageWeek1 extends BaseStage
 						dadbattleLight.setPosition(who.getGraphicMidpoint().x - dadbattleLight.width / 2, who.y + who.height - dadbattleLight.height + 50);
 						FlxTween.tween(dadbattleFog, {alpha: 0.7}, 1.5, {ease: FlxEase.quadInOut});
 
+					default:
+						dadbattleBlack.visible = false;
+						dadbattleLight.visible = false;
+						defaultCamZoom -= 0.12;
+						FlxTween.tween(dadbattleFog, {alpha: 0}, 0.7, {onComplete: function(twn:FlxTween) dadbattleFog.visible = false});
+				}
+			case "StageStuff":
+				if(flValue1 == null) flValue1 = 0;
+				var val:Int = Math.round(flValue1);
+
+				switch(val)
+				{
+					case 1, 2, 3: //enable and target dad
+						if(val == 1) //enable shader 1
+						{
+			                                stageshader1 = new FlxTypedGroup<CloudFlightBackground>();
+		                                	add(stageshader1);
+
+						}
+
+						if(val > 2) //enable shader 2
+						{
+			                                stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
+		                                	add(stageshader2);
+						}
 					default:
 						dadbattleBlack.visible = false;
 						dadbattleLight.visible = false;
