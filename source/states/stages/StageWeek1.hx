@@ -110,7 +110,6 @@ class StageWeek1 extends BaseStage
 		                   	stageshader1 = new FlxTypedGroup<CloudFlightBackground>();
 				        stageshader1.visible = true;
 			        	add(stageshader1);
-		                   	add(stageshader1);
 		        		stageFront.visible = false;
 			        	stageLight.visible = false;
 			        	stageshader2.visible = false;
@@ -122,7 +121,6 @@ class StageWeek1 extends BaseStage
 		        	        stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
 				        stageshader2.visible = true;
 		        	        add(stageshader2);
-		                   	add(stageshader2);
 			        	stageFront.visible = false;
 		         		stageLight.visible = false;
 			        	stageshader1.visible = false;
