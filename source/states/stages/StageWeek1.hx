@@ -100,8 +100,8 @@ class StageWeek1 extends BaseStage
 						FlxTween.tween(dadbattleFog, {alpha: 0}, 0.7, {onComplete: function(twn:FlxTween) dadbattleFog.visible = false});
 				}
 			case "StageStuff":
-				if(flValue1 == null) flValue1 = 0;
-				var val:Int = Math.round(flValue1);
+			if(flValue1 == null) flValue1 = 0;
+			var val:Int = Math.round(flValue1);
 
 			switch(val)
 			{
