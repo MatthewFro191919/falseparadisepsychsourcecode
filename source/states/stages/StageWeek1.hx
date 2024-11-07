@@ -105,7 +105,7 @@ class StageWeek1 extends BaseStage
 
 				switch(val)
 				{
-					case 1, 2, 3: //enable and target dad
+					case 1:
 						if(val == 1) //enable shader 1
 						{
 			                                stageshader1 = new FlxTypedGroup<CloudFlightBackground>();
@@ -117,8 +117,8 @@ class StageWeek1 extends BaseStage
 				bg.visible = false;
 
 						}
-
-						if(val > 2) //enable shader 2
+					case 2:
+						if(val == 2) //enable shader 2
 						{
 			                                stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
 		                                	add(stageshader2);
@@ -128,7 +128,8 @@ class StageWeek1 extends BaseStage
 				stageCurtains.visible = false;
 				bg.visible = false;
 						}
-				if(val > 3) //remove all
+					case 3:
+				if(val == 3) //remove all
 						{
 			                                stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
 		                                	add(stageshader2);
@@ -140,6 +141,7 @@ class StageWeek1 extends BaseStage
 				stageCurtains.visible = false;
 						}
 				}
+
 		}
 	}
 }
