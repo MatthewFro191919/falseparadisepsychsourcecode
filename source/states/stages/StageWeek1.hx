@@ -105,43 +105,41 @@ class StageWeek1 extends BaseStage
 
 				switch(val)
 				{
-					case 1:
-						if(val == 1) //enable shader 1
-						{
-			                                stageshader1 = new FlxTypedGroup<CloudFlightBackground>();
-		                                	add(stageshader1);
-				stageFront.visible = false;
-				stageLight.visible = false;
-				stageshader2.visible = false;
-				stageCurtains.visible = false;
-				bg.visible = false;
-
-						}
-					case 2:
-						if(val == 2) //enable shader 2
-						{
-			                                stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
-		                                	add(stageshader2);
-				stageFront.visible = false;
-				stageLight.visible = false;
-				stageshader1.visible = false;
-				stageCurtains.visible = false;
-				bg.visible = false;
-						}
-					case 3:
-				if(val == 3) //remove all
-						{
-			                                stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
-		                                	add(stageshader2);
-				stageFront.visible = false;
-				stageLight.visible = false;
-				stageshader1.visible = false;
-				stageshader2.visible = false;
-				stageCurtains.visible = false;
-				stageCurtains.visible = false;
-						}
+				case 1:
+				if(val == 1) //enable shader 1
+				{
+		                   	stageshader1 = new FlxTypedGroup<CloudFlightBackground>();
+		                   	add(stageshader1);
+		        		stageFront.visible = false;
+			        	stageLight.visible = false;
+			        	stageshader2.visible = false;
+			        	stageCurtains.visible = false;
+			        	bg.visible = false;
 				}
-
+				case 2:
+				if(val == 2) //enable shader 2
+				{
+		        	        stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
+		                   	add(stageshader2);
+			        	stageFront.visible = false;
+		         		stageLight.visible = false;
+			        	stageshader1.visible = false;
+		          		stageCurtains.visible = false;
+			        	bg.visible = false;
+				}
+				case 3:
+				if(val == 3) //remove all
+				{
+		        	        stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
+		        	        add(stageshader2);
+		        	        stageFront.visible = false;
+		        	        stageLight.visible = false;
+		        	        stageshader1.visible = false;		        	        
+					stageshader2.visible = false;
+		        	        stageCurtains.visible = false;
+		        	        stageCurtains.visible = false;
+				}
+			}
 		}
 	}
 }
