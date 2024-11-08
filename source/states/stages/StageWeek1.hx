@@ -100,11 +100,11 @@ class StageWeek1 extends BaseStage
 						FlxTween.tween(dadbattleFog, {alpha: 0}, 0.7, {onComplete: function(twn:FlxTween) dadbattleFog.visible = false});
 				}
 			case "StageStuff":
-				if(flValue1 == null) flValue1 = 0;
-				var val:Int = Math.round(flValue1);
+			if(flValue1 == null) flValue1 = 0;
+			var val:Int = Math.round(flValue1);
 
-				switch(val)
-				{
+			switch(val)
+			{
 				if(val == 1) //enable shader 1
 				{
 		                   	stageshader1 = new FlxTypedGroup<CloudFlightBackground>();
@@ -127,8 +127,6 @@ class StageWeek1 extends BaseStage
 				}
 				if(val == 3) //remove all
 				{
-		        	        stageshader2 = new FlxTypedGroup<FalseParadiseBackgroundSprite>();
-		        	        add(stageshader2);
 		        	        stageFront.visible = false;
 		        	        stageLight.visible = false;
 		        	        stageshader1.visible = false;		        	        
