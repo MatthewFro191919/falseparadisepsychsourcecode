@@ -3,6 +3,8 @@ package false_paradise;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.transition.FlxTransitionableState;
+import backend.Controls;
+import states.MainMenuState;
 
 class FalseParadiseShoutoutsState extends FlxTransitionableState
 {
