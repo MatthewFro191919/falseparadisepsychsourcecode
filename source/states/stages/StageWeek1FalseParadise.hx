@@ -34,7 +34,7 @@ import schmovin.note_mods.NoteModPerspective;
 import schmovin.note_mods.NoteModRotate;
 import schmovin.note_mods.NoteModTranslate;
 
-class StageWeek1 extends BaseStage
+class StageWeek1FalseParadise extends BaseStage
 {
 	var dadbattleBlack:BGSprite;
 	var dadbattleLight:BGSprite;
