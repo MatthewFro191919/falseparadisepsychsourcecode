@@ -17,7 +17,7 @@ class FalseParadiseShoutoutsState extends FlxTransitionableState
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
-		if (PlayerSettings.player1.controls.ACCEPT)
+		if (controls.ACCEPT)
 			FlxG.switchState(MainMenuState.Create());
 	}
 }
