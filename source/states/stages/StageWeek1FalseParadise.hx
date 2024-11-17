@@ -40,6 +40,10 @@ class StageWeek1FalseParadise extends BaseStage
 	var dadbattleLight:BGSprite;
 	var dadbattleFog:DadBattleFog;
 	var _modInstance:FalseParadiseInstance;
+	var s:Int;
+	var f:Int;
+	var e:Int;
+	var addNoteMod:Int;
 
 	override public function new(instance:SchmovinInstance, timeline:SchmovinTimeline, state:PlayState, modInstance:FalseParadiseInstance)
 	{
